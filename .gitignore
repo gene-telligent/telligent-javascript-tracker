@@ -1,0 +1,36 @@
+# Sauce Labs
+sauce_connect.log*
+
+# node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+**/lodash.js
+tests/pages/*.js
+tests/pages/integration.html
+tags/tag.min.js
+
+src/js/core
+src/js/lib_managed
+dist
+
+
+# creds for Grunt
+aws.json
+
+# Vagrant
+.vagrant
+VERSION

@@ -1,0 +1,40 @@
+# Sauce Labs
+sauce_connect.log*
+
+# node.js
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+.travis.yml
+
+npm-debug.log
+
+tests
+tags
+examples
+dist
+
+
+# creds for Grunt
+aws.json
+aws.sample.json
+
+# Vagrant
+vagrant
+.vagrant
+Vagrantfile
+
+VERSION
+
+Gruntfile.js
+npm-shrinkwrap.json
