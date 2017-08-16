@@ -1,6 +1,6 @@
 {
   "name": "telligent-tracker",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "main": "telligent.js",
   "dependencies": {
     "browser-cookie-lite": "~0.3.1",

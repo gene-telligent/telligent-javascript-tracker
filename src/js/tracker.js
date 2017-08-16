@@ -85,6 +85,7 @@
 	 * 17. discoverRootDomain, false
 	 * 18. apiVersion, v1
 	 * 19. env, production
+	 * 20. trackUrls, true
 	 */
 	object.Tracker = function Tracker(functionName, namespace, version, pageViewId, mutTelligentState, argmap) {
 
@@ -196,6 +197,9 @@
 
 			// Whether to use cookies
 			configUseCookies = argmap.hasOwnProperty('useCookies') ? argmap.useCookies : true,
+
+			// Whether to track URLs
+			configTrackUrls = argmap.hasOwnProperty('trackUrls') ? argmap.trackUrls : true,
 
 			// Browser language (or Windows language for IE). Imperfect but CloudFront doesn't log the Accept-Language header
 			browserLanguage = navigatorAlias.userLanguage || navigatorAlias.language,
@@ -377,6 +381,10 @@
 		 * or before being sent as GET parameters
 		 */
 		function purify(url) {
+			if (!configTrackUrls) {
+				return null;
+			}
+
 			var targetPattern;
 
 			if (configDiscardHashTag) {
