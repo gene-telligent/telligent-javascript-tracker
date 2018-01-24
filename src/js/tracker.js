@@ -1533,7 +1533,7 @@
 			 * @param bool trackUrls Whether to track URLs
 			 */
 			setTrackUrls: function (trackUrls) {
-				configTrackUrls = trackUrls || false;
+				configTrackUrls = Boolean(trackUrls)
 			},
 
 			/**
