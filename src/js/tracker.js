@@ -1527,6 +1527,16 @@
 			},
 
 			/**
+			 *
+			 * Specify whether to track URLs.
+			 *
+			 * @param bool trackUrls Whether to track URLs
+			 */
+			setTrackUrls: function (trackUrls) {
+				configTrackUrls = Boolean(trackUrls)
+			},
+
+			/**
 			* Specify the platform
 			*
 			* @param string platform Overrides the default tracking platform
