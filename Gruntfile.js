@@ -38,8 +38,7 @@ var semver = require('semver');
 module.exports = function(grunt) {
 
   var pkg = grunt.file.readJSON('package.json');
-  var semVer = semver.parse(pkg.version);
-  pkg.pinnedVersion = semVer.major;
+  pkg.pinnedVersion = semver.major(pkg.version);
   var banner = "/*!" +
   " * Telligent Data: Making data simple.\n" +
   " *\n" +

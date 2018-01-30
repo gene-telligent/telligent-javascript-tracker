@@ -16,7 +16,7 @@
     "lodash.isundefined": "^3.0.1",
     "lodash.map": "^4.2.1",
     "murmurhash": "0.0.2",
-    "semver": "^2.2.1",
+    "semver": "^5.5.0",
     "sha1": "git://github.com/pvorb/node-sha1.git#v1.0.0",
     "uuid": "^2.0.1"
   },
