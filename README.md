@@ -12,8 +12,21 @@ With this tracker you can collect user event data (page views, e-commerce transa
 
 ## Prerequisites
 
-* [Vagrant](http://docs.vagrantup.com/v2/installation/index.html)
-* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [Node](https://nodejs.org/en/download/)
+
+## Installing
+
+Install all packages and dependencies to run the application:
+
+```
+npm install
+```
+
+Build the package with Grunt:
+
+```
+grunt build
+```
 
 ## Authors
 
